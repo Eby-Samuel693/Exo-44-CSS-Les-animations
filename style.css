@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#div1 {
+    border-style: solid;
+    width: 150px;
+    height: 150px;
+    background-color: purple;
+    font-size: 1rem;
+    margin: 150px;
+    animation-name: couleur;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes couleur  {
+    0% {
+        background-color: blue;
+        font-size: 1.5rem;
+    }
+
+    25% {
+        background-color: lightgrey;
+    }
+
+    50% {
+        background-color: orange;
+        transform: rotate(45deg) ;
+    }
+
+    75% {
+        background-color: red;
+    }
+
+    to {
+        background-color: deeppink;
+        transform: rotate(90deg);
+    }
+}
